@@ -25,13 +25,14 @@
 from __future__ import print_function
 
 import os
+import sys
 
-import sphinx.environment
+sys.path.append(os.path.abspath(".."))
 
 # -- General configuration ------------------------------------------------
 
 # Do not warn on external images.
-suppress_warnings = ['image.nonlocal_uri']
+suppress_warnings = ['image.nonlocal_uri', 'autodoc.*']
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #needs_sphinx = '1.0'
